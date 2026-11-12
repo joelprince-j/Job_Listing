@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+/* Brand tokens — change colours here and the whole site follows. */
+@theme {
+  --color-cream: #faf5ec; /* page background */
+  --color-sand: #f4e8d8; /* alternate section background */
+  --color-sand-dark: #ecdcc4; /* borders, chips, skeletons */
+  --color-brand: #cf7208; /* primary orange */
+  --color-brand-dark: #b35f03;
+  --color-gold: #e3a21a; /* "Gigs" in the logo, eyebrow text on dark */
+  --color-ink: #1c1917; /* headings */
+  --color-navy: #1f2a3c; /* logo cap + "Student" */
+  --color-muted: #8a5a1c; /* brown secondary text */
+  --color-cocoa: #43260f; /* footer / CTA band */
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-nunito), ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+  background: var(--color-cream);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+}
